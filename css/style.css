@@ -25,12 +25,24 @@ header .logo {
   text-transform: uppercase;
   color: white;
   display: flex;
+  align-items: center;
+  background-color: black;
+  max-height: 56px;
 }
-header .logo .name {
+header .logo a:first-of-type {
+  height: 56px;
+  width: 68px;
+  background-image: url('../imgs/jsn-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 18px;
+}
+header .logo a.name {
   text-decoration: none;
   padding: 15px 20px;
   background-color: black;
   color: white;
+  font-size: 90%;
 }
 header .header-menu {
   display: flex;
@@ -60,6 +72,7 @@ header .menu-btn {
   padding: 15px;
   display: none;
   cursor: pointer;
+  max-height: 56px;
 }
 header .menu-btn.activeBtn {
   color: rgba(190, 178, 153, 1);
@@ -124,6 +137,13 @@ header .menu-btn.activeBtn {
   } */
   header .logo {
     font-size: 1.5rem;
+  }
+  header .logo a:first-of-type {
+    background-position-x: 2px;
+    width: 60px;
+  }
+  header .logo a:last-of-type {
+    display: none;
   }
   .mobile-menu {
     display: flex;
