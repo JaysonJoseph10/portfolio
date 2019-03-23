@@ -19,7 +19,7 @@
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
-#portfolio-projects .info .buttons{
+#portfolio-projects .info .buttons {
   padding: 20px 0;
 }
 #portfolio-projects .info .buttons a {
@@ -34,11 +34,11 @@
 }
 #portfolio-projects .info .buttons .fas {
   padding-right: 0.7rem;
-  color: #FF5253;
+  color: rgba(190, 178, 153, 1);
   transition: all 0.3s ease-in-out;
 }
 #portfolio-projects .info .buttons a:hover {
-  background-color: #FF5253;
+  background-color: rgba(190, 178, 153, 1);
 }
 #portfolio-projects .info .buttons a:hover .fas {
   color: #000;
@@ -71,7 +71,6 @@
   align-items: center;
   justify-items: center;
 }
-
 #portfolio-projects .technologies .icons img {
   filter: grayscale(100%);
   transition: all 0.3s ease-in-out;

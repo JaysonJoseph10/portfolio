@@ -1,5 +1,5 @@
 #top {
-
+  overflow: hidden;
 }
 #top .container {
   display: grid;
@@ -51,10 +51,21 @@
   border-bottom: 2px solid #beb299;
 }
 #top .img {
-
+  position: relative;
+  padding: 0 15px;
 }
-#top .img .background-img {
-  background: url('../../imgs/portrait.jpg');
+#top .img .style-rectangle {
+  width: 350px;
+  height: 350px;
+  border: 15px solid /*#DBF1FF*/ /*#beb299*/ rgba(240, 255, 0, 0.2);
+  position: absolute;
+  z-index: -1;
+  top: 28%;
+  left: 50%;
+  transform: rotate(45deg);
+}
+#top .img .quote {
+  /* background: url('../../imgs/portrait.jpg'); */
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,7 +73,22 @@
   max-width: 500px;
   height: 800px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+#top .img .quote h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+#top .img .quote p {
+  padding-top: 9%;
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+
 /*Tablets*/
 @media only screen and (max-width: 960px) {
   #top .container {
@@ -71,7 +97,7 @@
   #top .info .style-rectangle {
 
   }
-  #top .img .background-img {
+  #top .img .quote {
     height: 100vh;
   }
 }
@@ -85,7 +111,16 @@
   #top .info .style-rectangle {
     display: none;
   }
-  #top .img .background-img {
+  #top .img .style-rectangle {
+    display: none;
+  }
+  #top .img .quote {
     height: 100vh;
+  }
+  #top .img .quote h1 {
+    font-size: 1.2rem;
+  }
+  #top .img .quote p {
+    font-size: 1rem;
   }
 }
