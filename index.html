@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>JSN Web Technologies</title>
+    <title>Jayson Joseph - Frontend Developer | JSN Web Technologies</title>
     <meta charset='UTF-8'/>
     <meta name='viewport' content='width=device-width, user-scalable=no'>
+    <!--Open Graph data-->
+    <meta property='og:title' content='JSN Web Technologies'>
+    <meta property='og:type' content='website'>
+    <meta property='og:url' content='https://jsnweb.com/'>
+    <meta property='og:image' content='http://jsnweb.com/imgs/jsn-logo.png'>
+    <meta property='og:image:type' content='image/png'>
+    <meta property='og:image:width' content='500'>
+    <meta property='og:image:height' content='500'>
+    <meta property='og:description' content='Innovative web solutions for your business or company'>
+    <meta property="og:site_name" content='http://jsnweb.com/'>
+    <!--Stylesheet and fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' href='css/style.css'/>
-    <link rel='shortcut icon' type='image/png' sizes='16x16' href='imgs/jsnweb-favicon-16.png'>
-    <link rel='shortcut icon' type='image/png' sizes='32x32' href='imgs/jsnweb-favicon-32.png'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <!--Favicon-->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://jsnweb.com/imgs/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://jsnweb.com/imgs/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://jsnweb.com/imgs/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://jsnweb.com/imgs/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://jsnweb.com/imgs/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://jsnweb.com/imgs/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://jsnweb.com/imgs/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://jsnweb.com/imgs/favicon/apple-touch-icon-152x152.png" />
+    <link rel="shortcut icon" type="image/png" href="http://jsnweb.com/imgs/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="shortcut icon" type="image/png" href="http://jsnweb.com/imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="shortcut icon" type="image/png" href="http://jsnweb.com/imgs/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="http://jsnweb.com/imgs/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="shortcut icon" type="image/png" href="http://jsnweb.com/imgs/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="JSN Web Technologies"/>
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="http://jsnweb.com/imgs/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="http://jsnweb.com/imgs/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="http://jsnweb.com/imgs/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="http://jsnweb.com/imgs/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="http://jsnweb.com/imgs/favicon/mstile-310x310.png" />
   </head>
   <body>
     <header>
@@ -18,7 +48,7 @@
         </a>
       </div>
       <div class='header-menu'>
-        <a href='index.html'>Home</a>
+        <a href='#'>Home</a>
         <a href='#services'>Services</a>
         <a href='#portfolio'>Portfolio</a>
         <!--<a href='#experience'>Experience</a>
@@ -30,13 +60,14 @@
       </div>
     </header>
     <div class='mobile-menu'>
-      <a href='index.html'>Home</a>
+      <a href='#'>Home</a>
       <a href='#services'>Services</a>
       <a href='#portfolio'>Portfolio</a>
       <!--<a href='#experience'>Experience</a>
       <a href='#blog'>Blog</a>
       <a href='#testimonials'>Testimonials</a>-->
     </div>
+    <div class='mob-menu-underlay'></div>
     <section id='top'>
       <div class='container'>
         <div class='info'>
@@ -48,7 +79,7 @@
         <div class='img'>
           <div class="style-rectangle"></div>
           <div class='quote'>
-            <h1>Synergy gets work done</h1>
+            <h1>Synergy gets you further</h1>
             <p>
               “Great things in business are never done by one person. They’re done by a team of people.” - Steve Jobs
             </p>
@@ -67,13 +98,13 @@
             <i class="fas fa-code"></i>
             <!-- <i class="fas fa-trophy"></i> -->
             <h4>Front End Development</h4>
-            <p>With attention to detail desgins are turned into functional websites. You can excpect your finished website to look identical to a desgin.</p>
+            <p>With attention to detail, desgins are turned into functional websites. You can expect your website to look exactly how you want it.</p>
           </div>
           <div class='service red'>
             <!-- <i class="fas fa-plane"></i> -->
             <i class="fas fa-tablet-alt"></i>
             <h4>Responsive Desgin</h4>
-            <p>With the web being accesible to various types of devices with varying resolutions, a website should be able to look great on all screens.</p>
+            <p>With the web being accesible to various types of devices with varying screen resolutions, a website should be able to look great on all screens.</p>
           </div>
           <div class='service yellow'>
             <!-- <i class="fas fa-money-check-alt"></i> -->
@@ -102,11 +133,11 @@
               </div>
             </div>
           </a>
-          <a href='#' class='box image2'>
+          <a href='portfolio/hero-preview.html' class='box image2'>
             <div class='image'>
               <div class='hover-bg'>
                 <div class='title'>
-                  <div class='panel-text'>(Coming Soon)</div>
+                  <div class='panel-text'>Hero</div>
                 </div>
               </div>
             </div>

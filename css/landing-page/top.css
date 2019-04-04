@@ -87,6 +87,7 @@
   padding-top: 9%;
   line-height: 1.5;
   font-size: 1.4rem;
+  color: #919191;
 }
 
 /*Tablets*/
@@ -122,5 +123,15 @@
   }
   #top .img .quote p {
     font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #top .container {
+    height: calc(100vh - 96px);
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  #top .img .quote {
+    height: initial;
   }
 }
