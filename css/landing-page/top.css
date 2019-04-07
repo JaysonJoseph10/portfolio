@@ -108,6 +108,9 @@
 @media only screen and (max-width: 767px) {
   #top .container {
     padding: 0 0 80px;
+    height: calc(100vh - 96px);
+    text-align: center;
+    grid-template-columns: 1fr;
   }
   #top .info .style-rectangle {
     display: none;
@@ -116,22 +119,13 @@
     display: none;
   }
   #top .img .quote {
-    height: 100vh;
+    height: initial;
   }
   #top .img .quote h1 {
     font-size: 1.2rem;
   }
   #top .img .quote p {
     font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #top .container {
-    height: calc(100vh - 96px);
-    text-align: center;
-    grid-template-columns: 1fr;
-  }
-  #top .img .quote {
-    height: initial;
+    padding-top: 6%;
   }
 }
